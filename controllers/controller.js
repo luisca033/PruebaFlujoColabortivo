@@ -4,7 +4,13 @@ const home=(req,res)=>{
     msg:'home'
     })
 }
+const unknow=(req,res)=>{
+    return res.json({ok:true,
+        msg:'unknow'
+        })
+}
 
 module.exports={
-    home
+    home,
+    unknow
 }
