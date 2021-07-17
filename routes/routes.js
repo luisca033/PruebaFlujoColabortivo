@@ -1,9 +1,8 @@
-const {Router} =require('express')
+const {Router} =require('express');
+const { home } = require('../controllers/controller');
 const router=Router();
 
-router.get('/',(req,res)=>{
-    res.send('Home')
-})
+router.get('/',home)
 router.get('*',(req,res)=>{
     res.send('Unknow page')
 })
